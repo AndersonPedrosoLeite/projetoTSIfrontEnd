@@ -146,6 +146,10 @@ main{
     height: 40%;
     margin: 30px 5px 5px 5px
 }
+#tradingview-widget-container{
+    height: 100%;
+    width: 100%;
+}
 /* ===================================== FOOTER=================================================*/
 footer{
     display: flex;
