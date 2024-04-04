@@ -4,18 +4,32 @@
     font-family: Arial, Helvetica, sans-serif;
 }
  body{
-    background-attachment: fixed;
-    background-color: #272727;
-    color: white;
-    height: 150vh;
+    height: 100vh;
 }
-main{
-    margin: auto;
-    width: 600px;
-    padding: auto;
+/* ===================================== HEADER NAVEGATION =================================================*/
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
+li{
+    float: left;
+}
+li a{
+    color: #FFF;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+}
+li a:hover{
+    background-color: darkmagenta ;
+    color:blue;
+}
+
 .img_logo_header{
-    width: 45px;
+    width: 5px;
 }
 .header, .navigation_header{
     display: flex;
@@ -25,22 +39,21 @@ main{
 .header{
     background-color:#2d2d2d;
     box-shadow: 1px 1px, 4px #2d2d2d;
-    height: 1em;
     color: purple;
-    height: 3.5em;
     justify-content: space-between;
-    padding: 10%;
+    height: 7%;
 }
-.logo_header{
-    width: 10%;
+.logo-header{
+    width: 20%;
 }
 .logo{
-    width: 40%;
+    width: 30%;
+    margin-left: 70px;
 }
 .navigation_header{
     gap: 3em;
     z-index: 2;
-    width: 70%;
+    width: 80%;
 }
 .navigation_header a{
     text-decoration: none;
@@ -70,26 +83,7 @@ main{
     color: white;
     cursor: pointer;
 }
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-li{
-    float: left;
-}
-li a{
-    color: #FFF;
-    text-decoration: none;
-    padding: 8px 16px;
-    margin: 10px 10px 10px 10px;
-    display: block;
-}
-li a:hover{
-    background-color: darkmagenta ;
-    color:blue;
-}
+
 .conteudo-dropdown{
     display: none;
     font-weight: bold;
@@ -98,6 +92,7 @@ li a:hover{
     min-width: 160px;
     padding: 3px 3px 3px 3px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #2d2d2d;
 }
 .conteudo-dropdown li{
     float: none;
@@ -121,6 +116,20 @@ li a:hover{
 }
 .dropdown:hover .conteudo-dropdown{
     display: block;
+}
+.stocks{
+    background-color: grey;
+    height: 1.8em;
+    width: 100%;
+}
+/* ===================================== MAIN =================================================*/
+main{
+    width: 40%;
+    height: 70vh;
+}
+/* ===================================== FOOTER=================================================*/
+footer{
+    height: 15vh;
 }
 @media screen and (max-width:768px) {
     .btn_icon_header{

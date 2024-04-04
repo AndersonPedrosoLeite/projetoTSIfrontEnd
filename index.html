@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="module" src="js/chart.js"></script>
     <title>Header</title>
 
 </head>
 <body>
-    <header>
-        <div class="header" id="header">
+    <header id="header">
+        <div class="header">
             <div class="btn_icon_header">  <!--bootstrap icons svg-->
     
             </div>
             <div class="logo-header">
                     <img src="imagens/logo2.png" class="logo" alt="Logo YP">
             </div>
+            
             <div class="navigation_header" id="navigation_header">
                 <button onclick="toggleSidebar()" class="btn_icon_header">
                         <!--svg de fechar-->
@@ -33,25 +35,36 @@
                             </ul>
                     </li>
                 </ul>
-               
-              
-                <a href="">Criptomoedas</a>
-                <a href="">Livros</a>
-                <a href="">Sobre nós</a>
-                <a href="">Contato</a>
-                <a href="">Login</a>
+                                    <a href="">Criptomoedas</a>
+                                    <a href="">Livros</a>
+                                    <a href="">Sobre nós</a>
+                                    <a href="">Contato</a>
+                                    <a href="">Login</a>
             </div>
         </div>
+        <div class="stocks">
+
+        </div>
         <div tabindex="0" onclick="closeSideBar()" class="content" id="content">
+            <div>
+                <h1></h1>
+            </div>
     </header>
     <main>
-    
+        <section class="dois">
+            <div id="firstContainer">
+
+            </div>
+        </section>
     </main>
     <aside>
 
     </aside>
    <footer>
-
+        <p>
+            TradingView Lightweight Charts™
+            Copyright (с) 2023 TradingView, Inc. https://www.tradingview.com/
+        </p>
    </footer>
 </body>
 </html>
