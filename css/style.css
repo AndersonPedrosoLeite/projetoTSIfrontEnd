@@ -4,7 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
  body{
-    height: 100vh;
+    height: 200vh;
 }
 /* ===================================== HEADER NAVEGATION =================================================*/
 
@@ -41,7 +41,7 @@ li a:hover{
     box-shadow: 1px 1px, 4px #2d2d2d;
     color: purple;
     justify-content: space-between;
-    height: 7%;
+    height: 10%;
 }
 .logo-header{
     width: 20%;
@@ -74,8 +74,6 @@ li a:hover{
 }
 .content{
     text-align: center;
-    padding-top: 5em;
-    height: 100vh;
     transition: 1s;
 }
 .btn_icon_header{
@@ -124,12 +122,35 @@ li a:hover{
 }
 /* ===================================== MAIN =================================================*/
 main{
-    width: 40%;
-    height: 70vh;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.charts{
+    border: 2px solid black;
+    align-items: center;
+    height: 50%;
+    width: 90vh;
+    margin: 5em 10em 5em 5em;
+}
+#firstContainer{
+    background-color:grey;
+    width: 95%;
+    height: 40%;
+    margin: 5px 5px 5px 5px
+}
+#secContainer{
+    background-color:grey;
+    width: 95%;
+    height: 40%;
+    margin: 30px 5px 5px 5px
 }
 /* ===================================== FOOTER=================================================*/
 footer{
-    height: 15vh;
+    display: flex;
+    height: 14%;
+    background-color: #2d2d2d;
 }
 @media screen and (max-width:768px) {
     .btn_icon_header{
