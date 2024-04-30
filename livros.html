@@ -3,24 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Livros</title>
 </head>
 <body>
-    <div class="container">
-        <div class="images">
-            <img src="imagens/rothbard.jpg" class="active">
-            <img src="imagens/mock-historia.jpg">
-            <img src="imagens/keynes-mock.jpg">
+    <header id="header">
+        <div class="header">
+            <div class="btn_icon_header">  <!--bootstrap icons svg-->
+    
+            </div>
+            <div class="logo-header">
+                    <img src="imagens/looka-logo.png" class="logo" alt="Logo YP">
+            </div>
+            
+            <div class="navigation_header" id="navigation_header">
+                <button onclick="toggleSidebar()" class="btn_icon_header">
+                        <!--svg de fechar-->
+                </button>
+                <a href="index.html" >Notícias</a>
+                <ul>
+                    <li class="dropdown">
+                        <a href="acoes.html">Ações</a>
+                            <ul class="conteudo-dropdown">
+                                <li><a href="ibovespa.html">Ibovespa</a></li>
+                                <li><a href="">Nasdaq</a></li>
+                                <li><a href="">ETF's</a></li>
+                            </ul>
+                    </li>
+                </ul>
+                                    <a href="">Criptomoedas</a>
+                                    <a href="livros.html">Livros</a>
+                                    <a href="">Sobre nós</a>
+                                    <a href="">Contato</a>
+                                    <a href="">Login</a>
+            </div>
         </div>
-        <div class="dots">
-            <button onclick="dot(1)"></button>
-            <button onclick="dot(2)"></button>
-            <button onclick="dot(3)"></button>
+        <div class="stocks">
+
         </div>
-        <button id="prev" onclick="prev()"> &lt; </button>    
-        <button id="next" onclick="next()"> &gt; </button>    
-    </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="images">
+                <img src="imagens/rothbard.jpg" class="active">
+                <img src="imagens/mock-historia.jpg">
+                <img src="imagens/keynes-mock.jpg">
+            </div>
+            <div class="dots">
+                <button onclick="dot(1)"></button>
+                <button onclick="dot(2)"></button>
+                <button onclick="dot(3)"></button>
+            </div>
+            <button id="prev" onclick="prev()"> &lt; </button>    
+            <button id="next" onclick="next()"> &gt; </button>    
+        </div>
+    </main>
+   
     <script src="js/scripts.js"></script>
 </body>
 </html>
