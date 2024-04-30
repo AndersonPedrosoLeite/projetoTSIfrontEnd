@@ -1,39 +1,39 @@
+const TOTAL_SLIDES = 3;
+let currentIndex = 0;
 
-    
+const dots = document.querySelectorAll(".dots button");
+const images = document.querySelectorAll(".images img");
 
-    var header = document.getElementById('header');
-    var navigationHeader = document.getElementById('navigation_header');
-    var content = document.getElementById('content');
-    var showSidebar = false;
+function showSlide(index){
+    images.forEach(image => image.style.display =
+        "none");
+        dots.forEach(dot => dot.style.backgroundColor = 
+        "transparent");
 
-    function toggleSidebar(){
-        showSidebar = !showSidebar;
-        console.log(showSidebar);
-        if(showSidebar)
-        {
-            navigationHeader.style.marginLeft = '-10vW';
-            navigationHeader.style.animationName = 'showSidebar';
-            content.style.filter = 'blur(2px)';
-        }
-        else{
-            navigationHeader.style.marginLeft = '-100vW';
-            navigationHeader.style.animationName = '';
-            content.style.filter = '';
-        }
-    }
-    function closeSidebar(){
-        if(showSidebar)
-        {
-            toggleSidebar();
-        }
-    }
-    window.addEventListener('resize',function(event){
-        if(window.innerWidth > 768 && showSidebar)
-        {
-            toggleSidebar();
-        }
-    })
-    
+        images[index].style.display = "block";
+        dots[index].style.backgroundColor = "#000";
+}
+
+function gotoSlide(index){
+    currentIndex = (TOTAL_SLIDES + index) % TOTAL_SLIDES;
+    showSlide(currentIndex);
+}
+
+function next(){
+    gotoSlide(currentIndex + 1);
+}
+function prev(){
+    gotoSlide(currentIndex -1);
+}
+function dotClicked(index){
+    gotoSlide(index);
+}
+dots.forEach((dot, index)=>{
+    dot.addEventListener("click", () => dotClicked
+    (index));
+});
+showSlide(currentIndex);
+
     
 
 
